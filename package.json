@@ -1,0 +1,20 @@
+{
+  "name": "veida-ai-provider",
+  "version": "0.1.0",
+  "description": "Veida AI image provider for the Vercel AI SDK. Works with no API key on the free tier.",
+  "license": "MIT",
+  "author": "Veida",
+  "homepage": "https://veida.ai",
+  "repository": { "type": "git", "url": "git+https://github.com/hanshs474/veida-ai-provider.git" },
+  "bugs": { "url": "https://github.com/hanshs474/veida-ai-provider/issues" },
+  "keywords": ["ai", "ai-sdk", "vercel-ai", "image-generation", "text-to-image", "provider", "no-api-key"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc" },
+  "peerDependencies": { "@ai-sdk/provider": ">=4.0.0" },
+  "devDependencies": { "@ai-sdk/provider": "^4.0.21", "typescript": "^5.6.0", "ai": "^7.0.0" },
+  "engines": { "node": ">=18" }
+}
